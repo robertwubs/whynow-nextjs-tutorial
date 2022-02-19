@@ -44,12 +44,12 @@ export async function getStaticPaths() {
     // })
 
     return {
-        // paths: [
-        //     { params: { category: 'category-1' } },
-        //     { params: { category: 'category-2' } },
-        //     { params: { category: 'category-3' } }
-        // ],
-        paths: fetchedSlugs,
+        paths: [
+            { params: { category: 'category-1' } },
+            { params: { category: 'category-2' } },
+            { params: { category: 'category-3' } }
+        ],
+        // paths: fetchedSlugs,
         fallback: true // false or 'blocking'
     };
 }
